@@ -1,0 +1,131 @@
+:root {
+	--background-color: #28715C;
+	--border-color: #0E2720;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background-color);
+}
+/*******************************/
+#container {
+	margin-left: 50vw;
+	margin-top: 50vh;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#parent {
+	display: flex;
+	justify-content: center;
+}
+/*******************************/
+h1 {
+	color: white;
+	font-size: 3.5rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+#break {
+	margin-right: 5rem;
+	color: white;
+	font-size: 2rem;
+}
+
+#break-label {
+	overflow-wrap: normal;
+	white-space: nowrap;
+}
+
+#session {
+	color: white;
+	font-size: 2rem;
+}
+
+#session-label {
+	overflow-wrap: normal;
+	white-space: nowrap;
+}
+
+#parent button {
+	font-size: 2rem;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: var(--background-color);
+}
+
+#parent button:hover {
+	cursor: pointer;
+}
+/******************************************/
+#timer {
+	border: 0.4rem solid var(--border-color);
+	border-radius: 4rem;
+	width: 20rem;
+	height: 12rem;
+	margin: auto;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+#timer-label {
+	color: white;
+	font-size: 2rem;
+	padding-top: 1.5rem;
+}
+
+#time-left {
+	color: white;
+	font-size: 5rem;
+}
+/************************************/
+#container button{
+	font-size: 2rem;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: var(--background-color);
+}
+
+#container button:hover {
+	cursor: pointer;
+}
+
+#container p {
+	color: #942A2A;
+	margin-bottom: 0.2rem;
+	margin-top: 0.5rem;
+}
+
+#container p:last-of-type {
+	color: #21204F;
+	margin: 0;
+}
+/*********************************/
+@media only screen and (max-width: 500px) {
+	#parent {
+		font-size: 1rem;
+		display: block;
+	}
+	
+	#break {
+		margin-right: 0;
+	}
+}
+/***********************************/
